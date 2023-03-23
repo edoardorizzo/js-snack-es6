@@ -7,9 +7,9 @@ Es: [‘pippo’, ‘PLUTO’, ‘Paperino’] => [‘Pippo’, ‘Pluto’, ‘
 const stringArray = ['casa', 'cibo' , 'frigo', 'cucina'];
 //console.log(stringArray);
 
-stringArray.forEach((word => {
+const newArray = stringArray.map((word => {
     const toUppercase = word.charAt(0).toUpperCase() + word.slice(1);
     console.log(toUppercase);
     return toUppercase
 }))
-console.log(stringArray);
+console.log(newArray);
