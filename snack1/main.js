@@ -79,21 +79,10 @@ const diesel = cars.filter((carburante) => {
 })
 console.log(diesel);
 
-const electric = cars.filter((carburante) => {
-    if (carburante.fuel == 'electric') {
-        return true
-    } else {
-        return false
-    }
-})
-console.log(electric);
-
 const other = cars.filter((carburante) => {
     if (carburante.fuel == 'diesel') {
         return false
     } else if (carburante.fuel == 'oil'){
-        return false
-    } else if (carburante.fuel == 'electric'){
         return false
     } else {
         return true
